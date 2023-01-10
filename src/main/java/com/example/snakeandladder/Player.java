@@ -7,6 +7,8 @@ public class Player {
     private String name;
     private int coinPosition;
 
+    private static Board gameBoard = new Board();
+
     public Player(int tileSize, Color coinCoLor,String playerName){
         coinPosition = 1;
         coin = new Circle(tileSize/2);
